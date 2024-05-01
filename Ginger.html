@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ginger App Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eef0e5d736.js" crossorigin="anonymous"></script>
+  <style>
+    /* CSS variables for color scheme */
+    :root {
+      --primary: #161622;
+      --secondary: #FF9C01;
+      --secondary-100: #FF9001;
+      --secondary-200: #FF8E01;
+      --black: #000;
+      --black-100: #1E1E2D;
+      --black-200: #232533;
+      --gray-100: #CDCDE0;
+    }
+
+    /* Basic styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--black-100);
+      color: var(--gray-100);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+      animation: fadeIn 1s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      animation: slideIn 1s;
+      position: sticky;
+      top: 0;
+      background-color: var(--primary);
+      z-index: 1;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: var(--secondary);
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--secondary);
+      color: var(--primary);
+      transform: scale(1.1);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px;
+      animation: fadeIn 1s;
+    }
+
+    section {
+      margin-bottom: 60px;
+      padding: 20px;
+      background-color: var(--black-200);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      animation: slideUp 1s;
+    }
+
+    section h2 {
+      color: var(--secondary);
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    section p,
+    section li {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #8A8AEB;
+      color: var(--primary);
+      text-decoration: none;
+      text-align: center;
+      font-weight: 550;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: transform 0.3s;
+      animation: slideUp 1s;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .contact-icons a {
+      color: var(--secondary);
+      font-size: 2rem;
+      margin: 0 10px;
+      transition: transform 0.3s;
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    #btn-logo {
+      height: 15px;
+      width: 15px;
+      margin-right: 7px;
+    }
+
+    #github {
+      color: #fff;
+    }
+
+    #mail {
+      color: #D44638;
+    }
+
+    #linkedin {
+      color: #0A66C2;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: var(--gray-100);
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1s;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./icon.png" alt="Ginger Logo">
+    <h1>Ginger</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Download</a>
+    <a href="#">Contact</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Welcome to Ginger</h2>
+      <p>Ginger is a social media platform that allows users to create unique identities and share videos with each other. With Ginger, you can upload and share your favorite videos, browse through a vast collection of content, and connect with like-minded individuals. Our user-friendly interface and robust features make it easy to discover, watch, and engage with videos from various genres and communities.</p>
+    </section>
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <!-- <li>Personalized Profiles: Create your own unique profile, complete with a customizable avatar and bio, to showcase your personality and interests.</li> -->
+        <li>Video Sharing: Upload and share videos with your friends and the Ginger community. Whether it's vlogs, tutorials, or artistic creations, our platform allows you to express yourself through video content.</li>
+        <li>Intuitive Search and Discovery: Easily search and discover videos based on titles, tags, genres, or creators. Our advanced filtering options help you find exactly what you're looking for.</li>
+        <li>Social Engagement: Like, comment, and share your favorite videos with others. Connect with friends, follow creators you admire, and engage in vibrant discussions around shared interests.</li>
+        <li>Curated Recommendations: Our intelligent recommendation system suggests videos tailored to your preferences, ensuring you never run out of exciting content to explore.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Download</h2>
+      <p>Unfortunately, we are not yet available on the Play Store, but we are working hard to bring Ginger to app stores soon. You will be notified as soon as we launch on the Play Store.</p>
+      <p>For now, you can download the Ginger app directly from here:</p>
+      <a href="#" class="download-btn"><img src="icon.png" id="btn-logo">Download</a>
+    </section>
+    <section>
+      <h2>Contact Us</h2>
+      <p>Stay connected with us on :</p>
+      <div class="contact-icons">
+        <a href="https://github.com/Mr-incognito1109" target="_blank"><i id="github" class="fab fa-github"></i></a>
+        <a href="mailto:pratikshukla1109@gmail.com" target="_blank"><i id="mail" class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/pratikshukla1109/" target="_blank"><i id="linkedin" class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Ginger App.</p>
+    <p>Made with ❤️ in India</p>
+  </footer>
+</body>
+</html>
